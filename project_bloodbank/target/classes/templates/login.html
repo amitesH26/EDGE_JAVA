@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login - Online Blood Bank</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+</head>
+<body>
+<div id="login-container">
+    <h2 id="login-heading">Login to Online Blood Bank</h2>
+
+    <p th:if="${error}" th:text="${error}" style="color:red;"></p>
+
+    <form action="/login" method="post">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required minlength="6" />
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+</div>
+</body>
+</html>

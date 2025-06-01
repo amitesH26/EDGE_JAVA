@@ -1,0 +1,112 @@
+body {
+      background: url('../images/bloodw1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(220, 20, 60, 0.85);
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .search-bar {
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+    .search-bar input[type="text"] {
+      width: 80%;
+      padding: 10px 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      min-height: calc(100vh - 70px);
+      margin-top: 70px; /* Add margin to avoid overlapping with the fixed header */
+    }
+    .sidebar, .leaderboard, .hospital-requests {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      overflow-y: auto;
+      color: #fff;
+    }
+    .sidebar {
+      flex: 1;
+      max-width: 600px;
+    }
+    .leaderboard {
+      flex: 2;
+    }
+    .hospital-requests {
+      flex: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(220, 20, 60, 0.85);
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    /* message slider */
+    #msgSlider {
+      margin-bottom: 20px;
+      font-style: italic;
+      font-size: 1.1rem;
+      height: auto; /* Allow the height to adjust dynamically */
+      overflow-y: auto; /* Add a scrollbar if the content exceeds the max height */
+    }
+    #searchButton {
+      background-color: #c21807;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #searchButton:hover {
+      background-color: #9e1003; /* darker crimson */
+      transform: scale(1.05);
+      box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+    }
+    #a1, #a2, #a3, #a4 {
+      background-color: #c21807;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 10px;
+    }
